@@ -1,0 +1,62 @@
+@import "../../../assets/styles/mixins";
+@import "../../../assets/styles/variables";
+
+.container {
+  min-height: 200px;
+  border: $border;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  
+  @include onMobile {
+    flex-direction: column;
+  }
+
+  justify-content: space-between;
+
+  &:hover {
+    transition-duration: $standartDelay;
+    box-shadow: $shadow;
+  }
+}
+
+.description__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 18px;
+  color: $titleColor;
+  margin-bottom: 10px;
+}
+
+.mainTitle {
+  margin-bottom: 20px;
+}
+
+.subTitle {
+  font-size: 14px;
+  color: $titleColor;
+  margin-bottom: 20px;
+}
+
+.skills {
+  font-size: 14px;
+  color: $titleColor;
+  &__container {
+    margin-bottom: 20px;
+  }
+}
+
+.image__container, .image {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.rating {
+  margin-bottom: 10px;
+}
+

@@ -1,0 +1,10 @@
+@import '../../../assets/styles/variables';
+
+.toast__container {
+    margin-top: 100%;
+    font-size: 32px;
+    width: 400px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+}
